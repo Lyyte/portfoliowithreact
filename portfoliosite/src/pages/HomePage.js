@@ -1,8 +1,10 @@
 import React from 'react'
 
+import Banner from '../components/Banner'
+
 function HomePage(props) {
     return(
-        <p>Home Works!</p>
+        <Banner title={props.title} subTitle={props.subTitle} text={props.text} />
     )
 }
 
