@@ -24,9 +24,9 @@ class App extends React.Component {
         { title: 'Contact', path: '/contact' }
       ],
       home: {
-        title: 'Title Here',
-        subTitle: 'Subtitle here',
-        text: 'Home text here'
+        title: 'Lyyte Faridi',
+        subTitle: '"It’s fine to celebrate success but it is more important to heed the lessons of failure." ',
+        text: "-Bill Gates"
       },
       about: {
         title: 'About Me',
@@ -35,7 +35,9 @@ class App extends React.Component {
         title: 'Contact Me',
       },
       bootcamp: {
-        title: 'Bootcamp CourseWork',
+        title: 'UT Full-Stack Bootcamp',
+        subTitle: 'Concept Coursework',
+        text: 'Assignments for the Bootcamp to apply concepts and technologies learned in class'
       }
     }
   }
@@ -59,7 +61,7 @@ class App extends React.Component {
     <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
     <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} />} />
     <Route path='/contactme' exact render={() => <ContactPage title={this.state.contact.title} />} />
-    <Route path='/bootcamp' exact render={() => <BootcampPage title={this.state.bootcamp.title} />} />
+    <Route path='/bootcamp' exact render={() => <BootcampPage title={this.state.bootcamp.title} subTitle={this.state.bootcamp.subTitle} text={this.state.bootcamp.text} />} />
 
       <Footer />
   

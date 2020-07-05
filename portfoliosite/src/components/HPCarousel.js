@@ -3,7 +3,7 @@ import React from 'react'
 import Card from './Card'
 
 import Image1 from '../assets/images/img1.jpg'
-import Image2 from '../assets/images/img2.jpg'
+import UT from '../assets/images/UT.jpg'
 import Image3 from '../assets/images/img3.jpg'
 import Image4 from '../assets/images/img4.jpg'
 import Image5 from '../assets/images/img5.jpg'
@@ -19,18 +19,18 @@ class HPCarousel extends React.Component{
             items: [
                 {
                     id: 0,
-                    title: 'title',
-                    subTitle: 'Subtitle',
-                    imgSrc: Image1,
-                    link: 'https://google.com',
+                    title: 'Bootcamp',
+                    subTitle: 'Coursework',
+                    imgSrc: UT,
+                    link: '/bootcamp',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Bootcamp',
-                    subTitle: 'Coursework',
-                    imgSrc: Image2,
-                    link: '/bootcamp',
+                    title: 'title',
+                    subTitle: 'Subtitle',
+                    imgSrc: Image1,
+                    link: 'https://google.com',
                     selected: false
                 },
                 {

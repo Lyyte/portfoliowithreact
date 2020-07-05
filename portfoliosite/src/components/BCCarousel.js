@@ -2,11 +2,7 @@ import React from 'react'
 
 import BCCard from './BCCard'
 
-import Image1 from '../assets/images/img1.jpg'
-import Image2 from '../assets/images/img2.jpg'
-import Image3 from '../assets/images/img3.jpg'
-import Image4 from '../assets/images/img4.jpg'
-import Image5 from '../assets/images/img5.jpg'
+import PlaceHolder from '../assets/images/pencil.jpg'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
@@ -19,71 +15,63 @@ class BCCarousel extends React.Component{
             items: [
                 {
                     id: 0,
-                    title: 'title',
+                    title: 'Javascript Assignment',
                     subTitle: 'Subtitle',
-                    imgSrc: Image1,
-                    link: 'https://google.com',
+                    imgSrc: PlaceHolder,
+                    link: 'https://lyyte.github.io/Word-Guess-Game/',
                 },
                 {
                     id: 1,
-                    title: 'Bootcamp',
+                    title: 'jQuery Assignment',
                     subTitle: 'Coursework',
-                    imgSrc: Image2,
-                    link: '/bootcamp',
+                    imgSrc: PlaceHolder,
+                    link: 'https://lyyte.github.io/Crystal-Collector/',
                 },
                 {
                     id: 2,
-                    title: 'title',
+                    title: 'Javascript Assignment 2',
                     subTitle: 'Subtitle',
-                    imgSrc: Image3,
-                    link: 'https://google.com',
+                    imgSrc: PlaceHolder,
+                    link: 'https://lyyte.github.io/Trivia-Game/',
                 },
                 {
                     id: 3,
-                    title: 'title',
+                    title: 'GifTastic',
                     subTitle: 'Subtitle',
-                    imgSrc: Image4,
-                    link: 'https://google.com',
+                    imgSrc: PlaceHolder,
+                    link: 'https://lyyte.github.io/JIFtastic/',
                 },
                 {
                     id: 4,
-                    title: 'title',
+                    title: 'Train Scheduler',
                     subTitle: 'Subtitle',
-                    imgSrc: Image5,
-                    link: 'https://google.com',
+                    imgSrc: PlaceHolder,
+                    link: 'https://lyyte.github.io/Train-Schedule-/',
                 },
                 {
                     id: 5,
-                    title: 'title',
+                    title: 'LIRI Bot',
                     subTitle: 'Subtitle',
-                    imgSrc: Image1,
-                    link: 'https://google.com',
+                    imgSrc: PlaceHolder,
+                    link: 'https://lyyte.github.io/Liri/',
                 },
                 {
                     id: 6,
-                    title: 'Bootcamp',
+                    title: 'HW',
                     subTitle: 'Coursework',
-                    imgSrc: Image2,
-                    link: '/bootcamp',
-                },
-                {
-                    id: 7,
-                    title: 'title',
-                    subTitle: 'Subtitle',
-                    imgSrc: Image3,
+                    imgSrc: PlaceHolder,
                     link: 'https://google.com',
                 },
                 {
-                    id: 8,
-                    title: 'title',
+                    id: 7,
+                    title: 'HW',
                     subTitle: 'Subtitle',
-                    imgSrc: Image4,
+                    imgSrc: PlaceHolder,
                     link: 'https://google.com',
                 },
             ]
         }
     }
-    //1000px wide 1600px tall
 
     makeItems = (items) => {
         return items.map(item => {
