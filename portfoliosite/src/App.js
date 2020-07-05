@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
+import BootcampPage from './pages/BootcampPage';
 
 
 class App extends React.Component {
@@ -33,6 +34,9 @@ class App extends React.Component {
       contact: {
         title: 'Contact Me',
       },
+      bootcamp: {
+        title: 'Bootcamp CourseWork',
+      }
     }
   }
 
@@ -55,6 +59,7 @@ class App extends React.Component {
     <Route path='/' exact render={() => <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
     <Route path='/about' exact render={() => <AboutPage title={this.state.about.title} />} />
     <Route path='/contactme' exact render={() => <ContactPage title={this.state.contact.title} />} />
+    <Route path='/bootcamp' exact render={() => <BootcampPage title={this.state.bootcamp.title} />} />
 
       <Footer />
   

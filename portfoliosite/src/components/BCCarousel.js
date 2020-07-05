@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Card from '../components/Card'
+import BCCard from './BCCard'
 
 import Image1 from '../assets/images/img1.jpg'
 import Image2 from '../assets/images/img2.jpg'
@@ -11,7 +11,7 @@ import Image5 from '../assets/images/img5.jpg'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 
-class Carousel extends React.Component{
+class BCCarousel extends React.Component{
 
     constructor(props) {
         super(props);
@@ -23,15 +23,13 @@ class Carousel extends React.Component{
                     subTitle: 'Subtitle',
                     imgSrc: Image1,
                     link: 'https://google.com',
-                    selected: false
                 },
                 {
                     id: 1,
-                    title: 'title',
-                    subTitle: 'Subtitle',
+                    title: 'Bootcamp',
+                    subTitle: 'Coursework',
                     imgSrc: Image2,
-                    link: 'https://google.com',
-                    selected: false
+                    link: '/bootcamp',
                 },
                 {
                     id: 2,
@@ -39,7 +37,6 @@ class Carousel extends React.Component{
                     subTitle: 'Subtitle',
                     imgSrc: Image3,
                     link: 'https://google.com',
-                    selected: false
                 },
                 {
                     id: 3,
@@ -47,7 +44,6 @@ class Carousel extends React.Component{
                     subTitle: 'Subtitle',
                     imgSrc: Image4,
                     link: 'https://google.com',
-                    selected: false
                 },
                 {
                     id: 4,
@@ -55,41 +51,45 @@ class Carousel extends React.Component{
                     subTitle: 'Subtitle',
                     imgSrc: Image5,
                     link: 'https://google.com',
-                    selected: false
+                },
+                {
+                    id: 5,
+                    title: 'title',
+                    subTitle: 'Subtitle',
+                    imgSrc: Image1,
+                    link: 'https://google.com',
+                },
+                {
+                    id: 6,
+                    title: 'Bootcamp',
+                    subTitle: 'Coursework',
+                    imgSrc: Image2,
+                    link: '/bootcamp',
+                },
+                {
+                    id: 7,
+                    title: 'title',
+                    subTitle: 'Subtitle',
+                    imgSrc: Image3,
+                    link: 'https://google.com',
+                },
+                {
+                    id: 8,
+                    title: 'title',
+                    subTitle: 'Subtitle',
+                    imgSrc: Image4,
+                    link: 'https://google.com',
                 },
             ]
         }
     }
-
-
-
     //1000px wide 1600px tall
-
-
-    handleCardClick = (id, card) => {
-
-        let items = [...this.state.items];
-
-        items[id].selected = items[id].selected ? false : true;
-
-        items.forEach(item => {
-            if(item.id !== id) {
-                item.selected = false;
-            }
-        });
-
-        this.setState({
-            items
-        });
-    }
-
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Card item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} />
+            return <BCCard item={item} key={item.id} />
         })
     }
-
 
     render() {
         return(
@@ -103,4 +103,4 @@ class Carousel extends React.Component{
 
 }
 
-export default Carousel;
+export default BCCarousel;
