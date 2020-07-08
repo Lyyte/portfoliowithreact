@@ -57,10 +57,10 @@ class BCCarousel extends React.Component{
                 },
                 {
                     id: 6,
-                    title: 'HW',
+                    title: 'FriendFinder',
                     subTitle: 'Coursework',
                     imgSrc: PlaceHolder,
-                    link: 'https://google.com',
+                    link: 'https://infinite-headland-48547.herokuapp.com/',
                 },
                 {
                     id: 7,
