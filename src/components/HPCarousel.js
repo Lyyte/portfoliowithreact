@@ -2,7 +2,7 @@ import React from 'react'
 
 import Card from './Card'
 
-import Image1 from '../assets/images/img1.jpg'
+import Image1 from '../assets/images/img1.png'
 import UT from '../assets/images/UT.jpg'
 import Image3 from '../assets/images/img3.jpg'
 import Image4 from '../assets/images/img4.jpg'
